@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blackjack Game</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="balance">
+            Balance: <span id="coins">1000</span> coins
+        </div>
+
+        <div>
+            <label for="bet">Bet:</label>
+            <input id="bet" type="number" value="50" min="10" max="1000" />
+        </div> 
+
+        <div id="scores">
+            <div>Wins: <span id="wins">0</span></div>
+            <div>Losses: <span id="losses">0</span></div>
+        </div>
+        <div class="hand-section">
+            <label>Dealer's Hand:</label>
+            <div id="dealer-hand" class="hand"></div>
+        </div>
+        <div class="hand-section">
+            <label>Your Hand:</label>
+            <div id="player-hand" class="hand"></div>
+        </div>
+        <div id="buttons">
+            <button id="deal" onclick="deal()">Deal</button>
+            <button id="hit" onclick="hit()" disabled>Hit</button>
+            <button id="stand" onclick="stand()" disabled>Stand</button>
+            <button id="tip-dealer" onclick="tipDealer()">Tip Dealer</button>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

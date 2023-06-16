@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: green;
+}
+
+.container {
+    text-align: center;
+}
+
+.hand-section {
+    margin: 10px;
+}
+
+.hand {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+}
+
+#buttons {
+    margin: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+#message {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#scores {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
